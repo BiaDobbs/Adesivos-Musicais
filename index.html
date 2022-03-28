@@ -7,7 +7,7 @@
 </head>
 
 <body>
-     <!-- import aframe and then ar.js with image tracking / location based features 
+    <!-- import aframe and then ar.js with image tracking / location based features 
     <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>-->
     <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
@@ -44,22 +44,21 @@
     </script>
     <!--- Sorteia o número da música -->
     <script>
-     var numero = Math.floor(Math.random() * 4);
-        //var targetDiv = document.getElementsByTagName('a-nft').getElementByClassName('cometa');
-//targetDiv.insertAdjacentHTML('afterend', 'audiohandler="target: #Cometa'+numero+'"');
-         //var targetDiv2 = document.getElementsByTagName('a-entity').getElementByClassName('cometa');
-//targetDiv2.insertAdjacentHTML('afterend', 'soud="src: #Cometa'+numero+'"');
-       // setAttribute("disabled", "disabled");
-        //document.querySelectorAll('ul.active')
-        document.querySelector('a-nft.cometa').setAttribute('audiohandler', 'target: #Cometa0');
-        document.querySelector('a-entity.cometa').setAttribute('soud', 'src: #Cometa0');
-</script>
+        var numero = Math.floor(Math.random() * 4);
+
+        const cometanft = document.querySelector('a-nft.cometa');
+        cometanft.setAttribute('audiohandler', 'target: #Cometa0');
+       
+        const cometaentity = document.querySelector('a-entity.cometa')
+        cometaentity.setAttribute('soud', 'src: #Cometa0');
+
+    </script>
 
     <!-- style for the loader -->
     <style>
         .arjs-loader {
             height: 100%;
-            width: 80%;
+            width: 100%;
             position: absolute;
             top: 0;
             left: 0;
@@ -82,7 +81,7 @@
 
         <!-- minimal loader shown until image descriptors are loaded. Loading may take a while according to the device computational power -->
         <div class="arjs-loader">
-            <div> Carregando, por favor seja paciente e aguarde (e não esqueça de permitir a câmera!)</div>
+            <div> Carregando, por favor aguarde (e não esqueça de permitir a câmera!)</div>
         </div>
 
         <!-- a-frame scene -->
@@ -91,10 +90,10 @@
             <a-assets>
                 <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-Prologue.mp3?v=1648469909060" preload="auto" id="Cometa0">
                 </audio>
-                
+
                 <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-DustAndAshe.mp3?v=1648469895786" preload="auto" id="Cometa1">
                 </audio>
-               
+
                 <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-GreatComet.mp3?v=1648469899734" preload="auto" id="Cometa2">
                 </audio>
 
@@ -134,13 +133,8 @@
                 <a-entity soud="src: #hobbit"></a-entity>
             </a-nft>
 
-            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Cometa' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" class= "cometa">
-                <a-entity class= "cometa" depth="200" height="200" width="200"></a-entity>
-                 <a-entity
-        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-        scale="5 5 5"
-        position="50 150 0"
-      >
+            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Cometa' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5">
+                <a-entity gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf" scale="5 5 5" position="50 150 0">
             </a-nft>
 
             <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Hamilton' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" audiohandler="target: #who">
@@ -159,20 +153,16 @@
                 <a-entity soud="src: #gatsby"></a-entity>
             </a-nft>
 
-            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Phantom' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" class= "cometa">
-                <a-entity class= "cometa"></a-entity>
-                 <a-entity
-        gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf"
-        scale="5 5 5"
-        position="50 150 0"
-      >
+            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Phantom' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" class="cometa">
+                <a-entity class="cometa"></a-entity>
+                <a-entity gltf-model="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/AR-js-org/AR.js/master/aframe/examples/image-tracking/nft/trex/scene.gltf" scale="5 5 5" position="50 150 0">
             </a-nft>
 
 
             <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Wicked' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" audiohandler="target: #Cometa0">
                 <a-entity soud="src: #Cometa0"></a-entity>
             </a-nft>
-            
+
             <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/LionKing' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" audiohandler="target: #gatsby">
                 <a-entity soud="src: #gatsby"></a-entity>
             </a-nft>
