@@ -49,12 +49,12 @@
 //targetDiv.insertAdjacentHTML('afterend', 'audiohandler="target: #Cometa'+numero+'"');
          //var targetDiv2 = document.getElementsByTagName('a-entity').getElementByClassName('cometa');
 //targetDiv2.insertAdjacentHTML('afterend', 'soud="src: #Cometa'+numero+'"');
-        
+       // setAttribute("disabled", "disabled");
         
                 var targetDiv = document.getElementsByTagName('a-nft').getElementByClassName('cometa');
-targetDiv.insertAdjacentHTML('beforeend', 'audiohandler="target: #Cometa0"');
+targetDiv.setAttribute('audiohandler', 'target: #Cometa0');
          var targetDiv2 = document.getElementsByTagName('a-entity').getElementByClassName('cometa');
-targetDiv2.insertAdjacentHTML('beforeend', 'soud="src: #Cometa0"');
+targetDiv2..setAttribute('soud', 'src: #Cometa0');
 </script>
 
     <!-- style for the loader -->
