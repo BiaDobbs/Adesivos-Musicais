@@ -45,8 +45,10 @@
     <!--- Sorteia o número da música -->
     <script>
      var numero = Math.floor(Math.random() * 4);
-     $('a-nft.cometa').append('audiohandler="target: #Cometa'+numero+'">');
-     $('a-entity.cometa').append('soud="src: #Cometa'+numero+'">');
+        var targetDiv = document.getElementsByTagName('a-nft').getElementByClassName('Cometa');
+targetDiv.insertAdjacentHTML('afterend', 'audiohandler="target: #Cometa'+numero+'"');
+         var targetDiv2 = document.getElementsByTagName('a-entity').getElementByClassName('Cometa');
+targetDiv2.insertAdjacentHTML('afterend', 'soud="src: #Cometa'+numero+'"');
 </script>
 
     <!-- style for the loader -->
