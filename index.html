@@ -40,13 +40,14 @@
                 }
             }
         });
-        
-        <!--- Sorteia o número da música -->
-        var numero = Math.floor(Math.random() * 4);
-     $('a-nft.cometa').append('audiohandler="target: #Cometa'+numero+'">');
-     $('a-entity.cometa').append(soud="src: #Cometa'+numero+'">');
 
     </script>
+    <!--- Sorteia o número da música -->
+    <script>
+     var numero = Math.floor(Math.random() * 4);
+     $('a-nft.cometa').append('audiohandler="target: #Cometa'+numero+'">');
+     $('a-entity.cometa').append(soud="src: #Cometa'+numero+'">');
+</script>
 
     <!-- style for the loader -->
     <style>
@@ -127,8 +128,8 @@
                 <a-entity soud="src: #hobbit"></a-entity>
             </a-nft>
 
-            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Cometa' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" class= "cometa" audiohandler="target: #invisivel">
-                <a-entity soud="src: #invisivel" depth="200" height="200" width="200"></a-entity>
+            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Cometa' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" class= "cometa">
+                <a-entity class= "cometa" depth="200" height="200" width="200"></a-entity>
             </a-nft>
 
             <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Hamilton' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" audiohandler="target: #who">
@@ -147,8 +148,8 @@
                 <a-entity soud="src: #gatsby"></a-entity>
             </a-nft>
 
-            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Phantom' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" audiohandler="target: #milennium">
-                <a-entity soud="src: #milennium"></a-entity>
+            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Phantom' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" class= "cometa">
+                <a-entity class= "cometa"></a-entity>
             </a-nft>
 
 
