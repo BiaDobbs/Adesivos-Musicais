@@ -40,6 +40,11 @@
                 }
             }
         });
+        
+        <!--- Sorteia o número da música -->
+        var numero = Math.floor(Math.random() * 4);
+     $('a-nft.cometa').append('audiohandler="target: #Cometa'+numero+'">');
+     $('a-entity.cometa').append(soud="src: #Cometa'+numero+'">');
 
     </script>
 
@@ -77,21 +82,19 @@
         <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;">
             <!-- carrega os arquivos -->
             <a-assets>
-                <audio src="https://cdn.glitch.com/ca465b4f-3c04-4c3f-a80a-3e9eb1793394%2FTeste%20de%20a%CC%81udio%20hobbit.mp3?v=1601068258942" preload="auto" id="hobbit">
+                <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-Prologue.mp3?v=1648469909060" preload="auto" id="Cometa0">
                 </audio>
-                <audio src="https://cdn.glitch.com/ca465b4f-3c04-4c3f-a80a-3e9eb1793394%2FJekyll.mp3?v=1601070708500" preload="auto" id="jekyll">
+                
+                <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-DustAndAshe.mp3?v=1648469895786" preload="auto" id="Cometa1">
                 </audio>
-
-                <audio src="https://cdn.glitch.com/ca465b4f-3c04-4c3f-a80a-3e9eb1793394%2FTesteAudioInvisivel.mp3?v=1601068308303" preload="auto" id="invisivel">
-                </audio>
-
-                <audio src="https://cdn.glitch.com/ca465b4f-3c04-4c3f-a80a-3e9eb1793394%2FDoctor%20Who%202013%20Extended%20Theme%20with%20Middle%208.mp3?v=1601069509607" preload="auto" id="who">
+               
+                <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-GreatComet.mp3?v=1648469899734" preload="auto" id="Cometa2">
                 </audio>
 
-                <audio src="https://cdn.glitch.com/ca465b4f-3c04-4c3f-a80a-3e9eb1793394%2FGatsby.wav?v=1603988596349" preload="auto" id="gatsby">
+                <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-Letters.mp3?v=1648469904312" preload="auto" id="Cometa3">
                 </audio>
 
-                <audio src="https://cdn.glitch.com/ca465b4f-3c04-4c3f-a80a-3e9eb1793394%2FMafalda.wav?v=1603988560673" preload="auto" id="mafalda">
+                <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-Pierre.mp3?v=1648469905617" preload="auto" id="Cometa4">
                 </audio>
 
                 <audio src="https://cdn.glitch.com/ca465b4f-3c04-4c3f-a80a-3e9eb1793394%2FMilenium.wav?v=1603988608440" preload="auto" id="milennium">
@@ -124,7 +127,7 @@
                 <a-entity soud="src: #hobbit"></a-entity>
             </a-nft>
 
-            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Cometa' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" audiohandler="target: #invisivel">
+            <a-nft type="nft" url='https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/BiaDobbs/AR_Experience/master/Cometa' smooth="true" smoothCount="10" smoothTolerance=".01" smoothThreshold="5" class= "cometa" audiohandler="target: #invisivel">
                 <a-entity soud="src: #invisivel" depth="200" height="200" width="200"></a-entity>
             </a-nft>
 

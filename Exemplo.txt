@@ -1,0 +1,20 @@
+<body>
+<div class="demo">
+</div>
+<script>
+     var count = 4;
+      for(var i=1;i<=count;i++){
+          var varSlid = "A"+i;
+          $('.demo').append('<div id='+varSlid+'></div><br/>');
+      }
+</script>
+</body>
+
+
+
+
+<script>
+     var numero = Math.floor(Math.random() * 4);
+     $('a-nft.cometa').append('audiohandler="target: #Cometa'+numero+'">');
+     $('a-entity.cometa').append(soud="src: #Cometa'+numero+'">');
+</script>
