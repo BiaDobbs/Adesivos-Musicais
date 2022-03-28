@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Adesivos musicais</title>
+</head>
+
+<script>
+    var numero = Math.floor(Math.random() * 4);
+    var escolhida = "Cometa"+numero;
+    function toca() {
+        //alert(escolhida);
+        document.getElementById(escolhida).play();
+        //$('a-nft.Cometa').append('audiohandler="target: #Cometa'+numero+'">');
+        //$('a-entity.Cometa').append('soud="src: #Cometa'+numero+'">');
+    }
+
+</script>
+
+<body style="margin : 0px; overflow: hidden;">
+
+
+    <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-Prologue.mp3?v=1648469909060" preload="auto" id="Cometa0">
+    </audio>
+
+    <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-DustAndAshe.mp3?v=1648469895786" preload="auto" id="Cometa1">
+    </audio>
+
+    <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-GreatComet.mp3?v=1648469899734" preload="auto" id="Cometa2">
+    </audio>
+
+    <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-Letters.mp3?v=1648469904312" preload="auto" id="Cometa3">
+    </audio>
+
+    <audio src="https://cdn.glitch.global/08db294f-a45a-4f86-9be4-a7d55da8a724/Cometa-Pierre.mp3?v=1648469905617" preload="auto" id="Cometa4">
+    </audio>
+
+    <button type="button" onclick="toca()">Play</button>
+
+
+</body>
+</body>
+
+</html>
